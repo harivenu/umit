@@ -1,0 +1,35 @@
+uuid: 163f0286-9447-4be9-967c-8dc172fc2811
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.assignment.body
+    - field.field.node.assignment.field_assignment_submission
+    - node.type.assignment
+  module:
+    - text
+    - user
+id: node.assignment.teaser
+targetEntityType: node
+bundle: assignment
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_assignment_submission: true

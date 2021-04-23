@@ -1,0 +1,23 @@
+uuid: d188c1f0-8c5e-4f05-8f19-61acbd6f29e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - ebook_zymphonies_theme
+_core:
+  default_config_hash: wZTTXhRDLRs20FvEg3ihfpm7NRTsrYhm6kZZrI2HMjk
+id: ebook_zymphonies_theme_search
+theme: ebook_zymphonies_theme
+region: search
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: ''
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: c8d29a53-b10c-459d-9ada-76fcffef8e35
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ebook_zymphonies_theme
+_core:
+  default_config_hash: 0pK50Nm5Ioj1B_Saz3b3b5GTrbdc8RI0451ABr9avIM
+id: ebook_zymphonies_theme_breadcrumbs
+theme: ebook_zymphonies_theme
+region: breadcrumb
+weight: -100
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

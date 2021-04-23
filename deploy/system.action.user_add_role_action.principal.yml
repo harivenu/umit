@@ -1,0 +1,14 @@
+uuid: 9ff0880c-39ef-4631-8a7f-d9c9317cb9e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.principal
+  module:
+    - user
+id: user_add_role_action.principal
+label: 'Add the Principal role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: principal

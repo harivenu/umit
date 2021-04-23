@@ -1,0 +1,22 @@
+uuid: 54b6038d-dea2-4019-89e2-b8436b1dd2cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - ebook_zymphonies_theme
+_core:
+  default_config_hash: q0wnr9uf2_LKl03LP2-ZhqSBPiYR36G9DtxQIP--Esw
+id: ebook_zymphonies_theme_help
+theme: ebook_zymphonies_theme
+region: highlighted
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

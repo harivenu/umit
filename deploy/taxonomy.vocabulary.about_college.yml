@@ -1,0 +1,8 @@
+uuid: 1264571c-b1a6-43a1-87fa-54a6981bdbdf
+langcode: en
+status: true
+dependencies: {  }
+name: 'ABOUT COLLEGE'
+vid: about_college
+description: ''
+weight: 0

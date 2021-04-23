@@ -1,0 +1,33 @@
+uuid: 7207aa9c-1a6a-44e2-a10a-554da6ed3b0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_assignment_submission
+    - node.type.assignment
+    - webform.webform.assignment_submission
+  module:
+    - webform
+id: node.assignment.field_assignment_submission
+field_name: field_assignment_submission
+entity_type: node
+bundle: assignment
+label: 'Assignment Submission'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    webform_access_group: {  }
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: f89675b4-c240-4739-bb4e-1fc1adef19f0
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

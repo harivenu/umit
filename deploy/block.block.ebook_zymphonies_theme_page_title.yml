@@ -1,0 +1,20 @@
+uuid: d972ab10-bb59-4241-a6c2-0b72953e592d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ebook_zymphonies_theme
+_core:
+  default_config_hash: YdYCQywnU0V7z8p7RjdZkpAM6g-i88tjtEhlIQ9j3HY
+id: ebook_zymphonies_theme_page_title
+theme: ebook_zymphonies_theme
+region: page_title
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

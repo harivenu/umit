@@ -1,0 +1,27 @@
+uuid: 973fa8d1-ee01-44bb-ac50-f7d44eecc685
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - ebook_zymphonies_theme
+_core:
+  default_config_hash: yYZwkOOzvESO6mjPvTmVIrtx-vzW8UYWjAzNzdv59-8
+id: ebook_zymphonies_theme_account_menu
+theme: ebook_zymphonies_theme
+region: header
+weight: 11
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

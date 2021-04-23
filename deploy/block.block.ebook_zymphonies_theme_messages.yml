@@ -1,0 +1,22 @@
+uuid: 315d654e-df2c-4aaf-baec-0064f135117b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ebook_zymphonies_theme
+_core:
+  default_config_hash: Y_dMPIZ9ZPTpwFJn20uKCN5Tt9I34OFOsz1GebDAkvM
+id: ebook_zymphonies_theme_messages
+theme: ebook_zymphonies_theme
+region: highlighted
+weight: -50
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

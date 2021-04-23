@@ -1,0 +1,14 @@
+uuid: 729f70ce-6342-4ae5-9edd-519c42e730b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.principal
+  module:
+    - user
+id: user_remove_role_action.principal
+label: 'Remove the Principal role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: principal

@@ -1,0 +1,9 @@
+uuid: 4fe19c5c-b558-4b28-877c-ff712d3f73ff
+langcode: en
+status: true
+dependencies: {  }
+id: principal
+label: Principal
+weight: 5
+is_admin: null
+permissions: {  }
