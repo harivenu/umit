@@ -6,4 +6,10 @@ id: teacher
 label: Teacher
 weight: 4
 is_admin: null
-permissions: {  }
+permissions:
+  - 'create assignment content'
+  - 'delete assignment revisions'
+  - 'delete own assignment content'
+  - 'edit own assignment content'
+  - 'view all login histories'
+  - 'view own login history'

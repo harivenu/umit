@@ -1,0 +1,39 @@
+uuid: af342858-5f64-465e-9f7f-261819b9873b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:77173b3d-a669-4e6a-8755-34c9d3938192'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - ebook_zymphonies_theme
+id: menuteacher
+theme: ebook_zymphonies_theme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:77173b3d-a669-4e6a-8755-34c9d3938192'
+settings:
+  id: 'block_content:77173b3d-a669-4e6a-8755-34c9d3938192'
+  label: 'Menu (teacher)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /dashboard
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      teacher: teacher
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

@@ -16,6 +16,11 @@ targetEntityType: user
 bundle: user
 mode: compact
 content:
+  flag_attendance:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   user_picture:
     type: image
     weight: 0
@@ -26,4 +31,7 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
   member_for: true

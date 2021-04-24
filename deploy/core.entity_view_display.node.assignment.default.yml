@@ -24,7 +24,7 @@ content:
     region: content
   field_assignment_submission:
     weight: 102
-    label: above
+    label: hidden
     settings:
       source_entity: true
     third_party_settings: {  }
@@ -32,9 +32,9 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true

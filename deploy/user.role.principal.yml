@@ -6,4 +6,14 @@ id: principal
 label: Principal
 weight: 5
 is_admin: null
-permissions: {  }
+permissions:
+  - 'create assignment content'
+  - 'delete any assignment content'
+  - 'delete assignment revisions'
+  - 'delete own assignment content'
+  - 'edit any assignment content'
+  - 'edit own assignment content'
+  - 'revert assignment revisions'
+  - 'view all login histories'
+  - 'view assignment revisions'
+  - 'view own login history'

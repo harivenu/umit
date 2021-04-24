@@ -24,6 +24,7 @@
         "drupal/core-vendor-hardening": "^8.8",
         "drupal/entity_print": "2.x",
         "drupal/login_history": "^1.0",
+        "drupal/menu_item_role_access": "^2.0",
         "drupal/page_manager": "^4.0@beta",
         "drupal/role_login_page": "^1.1",
         "drupal/simplelogin": "^6.0",
