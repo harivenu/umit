@@ -31,9 +31,8 @@ logo:
 favicon:
   use_default: 1
 slide_image_path1:
-  - '36'
-slide_image_path2:
-  - '37'
+  - '39'
+slide_image_path2: {  }
 slide_image_path3: {  }
 slide_title_3: ''
 slide_description_3: ''

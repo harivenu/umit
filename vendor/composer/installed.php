@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'ea02c31b1a8168a3979a2151b60f70c3dc957df0',
     'name' => 'drupal/legacy-project',
   ),
   'versions' => 
@@ -107,6 +107,15 @@
       array (
         0 => '8.9.13',
       ),
+    ),
+    'drupal/admin_toolbar' => 
+    array (
+      'pretty_version' => '3.0.0',
+      'version' => '3.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3.0.0',
     ),
     'drupal/aggregator' => 
     array (
@@ -475,6 +484,15 @@
         0 => '8.9.13',
       ),
     ),
+    'drupal/ctools' => 
+    array (
+      'pretty_version' => '3.5.0',
+      'version' => '3.5.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-3.5',
+    ),
     'drupal/datetime' => 
     array (
       'replaced' => 
@@ -640,12 +658,12 @@
     ),
     'drupal/legacy-project' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'ea02c31b1a8168a3979a2151b60f70c3dc957df0',
     ),
     'drupal/link' => 
     array (
@@ -660,6 +678,15 @@
       array (
         0 => '8.9.13',
       ),
+    ),
+    'drupal/login_history' => 
+    array (
+      'pretty_version' => '1.0.0',
+      'version' => '1.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.0',
     ),
     'drupal/media' => 
     array (
@@ -745,6 +772,15 @@
         0 => '8.9.13',
       ),
     ),
+    'drupal/page_manager' => 
+    array (
+      'pretty_version' => '4.0.0-beta6',
+      'version' => '4.0.0.0-beta6',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-4.0-beta6',
+    ),
     'drupal/path' => 
     array (
       'replaced' => 
@@ -786,6 +822,15 @@
       array (
         0 => '8.9.13',
       ),
+    ),
+    'drupal/role_login_page' => 
+    array (
+      'pretty_version' => '1.1.0',
+      'version' => '1.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.1',
     ),
     'drupal/search' => 
     array (

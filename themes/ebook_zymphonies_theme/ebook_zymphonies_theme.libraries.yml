@@ -21,6 +21,7 @@ global-components:
     theme:
       css/global.css: {}
       css/media.css: {}
+      css/custom.css: {}
   js:
     js/custom.js: {}
   dependencies:

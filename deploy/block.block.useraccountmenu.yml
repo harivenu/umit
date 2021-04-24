@@ -1,29 +1,29 @@
-uuid: 071d6de6-0e7c-4bbb-b527-cc093b215d35
+uuid: 94799265-58d3-4a08-b5d1-d04bb1ae5725
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.main
+    - system.menu.account
   module:
     - superfish
   theme:
     - ebook_zymphonies_theme
-id: mainnavigation
+id: useraccountmenu
 theme: ebook_zymphonies_theme
 region: primary_menu
 weight: 0
 provider: null
-plugin: 'superfish:main'
+plugin: 'superfish:account'
 settings:
-  id: 'superfish:main'
-  label: 'Main navigation'
+  id: 'superfish:account'
+  label: 'User account menu'
   provider: superfish
   label_display: '0'
   level: '1'
   depth: '0'
   expand_all_items: false
   menu_type: horizontal
-  style: blue
+  style: none
   arrow: 1
   shadow: 1
   speed: fast

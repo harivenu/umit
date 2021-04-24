@@ -1,0 +1,7 @@
+#block-useraccountmenu {
+    display: none;
+}
+
+.user-logged-in #block-useraccountmenu {
+    display: block;
+}
