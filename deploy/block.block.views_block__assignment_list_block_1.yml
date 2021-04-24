@@ -1,0 +1,39 @@
+uuid: e5038704-049e-41b8-8bd8-95c90fc59261
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.assignment_list
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - ebook_zymphonies_theme
+id: views_block__assignment_list_block_1
+theme: ebook_zymphonies_theme
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:assignment_list-block_1'
+settings:
+  id: 'views_block:assignment_list-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      teacher: teacher
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: /dashboard
+    negate: false
+    context_mapping: {  }
