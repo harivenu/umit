@@ -2,6 +2,8 @@ uuid: d972ab10-bb59-4241-a6c2-0b72953e592d
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - ebook_zymphonies_theme
 _core:
@@ -17,4 +19,9 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /frontpage
+    negate: true
+    context_mapping: {  }

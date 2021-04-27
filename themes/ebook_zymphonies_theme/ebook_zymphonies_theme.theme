@@ -149,6 +149,11 @@ function ebook_zymphonies_theme_preprocess_page(&$variables) {
       $variables['slider_content'] = ebook_zymphonies_theme_get_slider_content();
     }
   }
+  $content_type = _theme_name__access_content_type();
+  if ($content_type == 'home_page') {
+    $variables['show_slideshow'] = 1;
+    $variables['slider_content'] = ebook_zymphonies_theme_get_slider_content();
+  }
 
 }
 
@@ -332,4 +337,34 @@ function ebook_zymphonies_theme_form_system_theme_settings_alter(&$form, \Drupal
     }
 
   }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for form templates.
+ * @param array $suggestions
+ * @param array $variables
+ * Needing to add page--<content_type_name>.html.twig to build
+ */
+function ebook_zymphonies_theme_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  //-- accesses the content type on page landing
+  //-- custom function
+  $access_content_type = _theme_name__access_content_type();
+  if ($access_content_type != NULL ) {
+    $suggestions[] = 'page__' .$access_content_type;
+  }
+}
+
+/**
+ * Access current content type on page load.
+ * Changing the function name protects you
+ * from other modules.
+ * @return mixed
+ */
+function _theme_name__access_content_type(){
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    if (!empty($node) && is_object($node)) {
+      return $node->bundle();
+    }
+  }
+  return NULL;
 }
