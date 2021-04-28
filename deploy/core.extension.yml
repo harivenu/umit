@@ -76,6 +76,7 @@ module:
   webform_submission_log: 0
   webform_templates: 0
   webform_ui: 0
+  x_frame_options_configuration: 0
   webform_bootstrap: 1
   views: 10
   standard: 1000
