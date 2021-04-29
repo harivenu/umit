@@ -5,3 +5,12 @@
 .user-logged-in #block-useraccountmenu {
     display: block;
 }
+
+.map-section {
+    padding: 20px 0px;
+    background-color: #1d1d1d;
+}
+
+.map-section .contact-us {
+    color: white;
+}
