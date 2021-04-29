@@ -3,12 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_assignment_submission
     - node.type.assignment
   module:
     - node
     - user
-    - webform
 id: assignment_list
 label: 'Assignment List'
 module: views
@@ -85,7 +83,7 @@ display:
             field_assignment_submission: field_assignment_submission
           info:
             title:
-              sortable: false
+              sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
@@ -107,73 +105,10 @@ display:
           id: title
           table: node_field_data
           field: title
-          settings:
-            link_to_entity: true
-          plugin_id: field
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_assignment_submission:
-          id: field_assignment_submission
-          table: node__field_assignment_submission
-          field: field_assignment_submission
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
+          label: 'Assignment Title'
           exclude: false
           alter:
             alter_text: false
@@ -214,11 +149,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: webform_entity_reference_entity_view
+          click_sort_column: value
+          type: string
           settings:
-            source_entity: true
-          group_column: ''
+            link_to_entity: true
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -272,9 +207,31 @@ display:
             label: ''
           granularity: second
       title: 'Assignment List'
-      header: {  }
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content: '<h2>Assignment List</h2>'
+          plugin_id: text_custom
       footer: {  }
-      empty: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content: '<p>No items</p>'
+          plugin_id: text_custom
       relationships: {  }
       arguments:
         uid:
@@ -324,8 +281,7 @@ display:
         - user
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_assignment_submission'
+      tags: {  }
   block_1:
     display_plugin: block
     id: block_1
@@ -343,5 +299,4 @@ display:
         - user
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_assignment_submission'
+      tags: {  }

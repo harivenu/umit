@@ -61,9 +61,6 @@ module:
   webform_demo_application_evaluation: 0
   webform_entity_print: 0
   webform_entity_print_attachment: 0
-  webform_example_element: 0
-  webform_example_element_properties: 0
-  webform_example_variant: 0
   webform_icheck: 0
   webform_image_select: 0
   webform_node: 0

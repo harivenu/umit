@@ -6,4 +6,6 @@ id: student
 label: Student
 weight: 3
 is_admin: null
-permissions: {  }
+permissions:
+  - 'edit own field_assignment_submission'
+  - 'view own field_assignment_submission'

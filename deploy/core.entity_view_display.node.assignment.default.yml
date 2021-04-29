@@ -26,9 +26,11 @@ content:
     weight: 102
     label: hidden
     settings:
-      source_entity: true
+      label: 'Go to [webform:title] webform'
+      dialog: ''
+      attributes: {  }
     third_party_settings: {  }
-    type: webform_entity_reference_entity_view
+    type: webform_entity_reference_link
     region: content
   links:
     weight: 100

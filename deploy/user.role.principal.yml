@@ -16,4 +16,5 @@ permissions:
   - 'revert assignment revisions'
   - 'view all login histories'
   - 'view assignment revisions'
+  - 'view field_assignment_submission'
   - 'view own login history'

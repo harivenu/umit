@@ -12,7 +12,7 @@ id: assignment_submission
 title: 'Assignment Submission'
 description: ''
 category: ''
-elements: "note:\n  '#type': textarea\n  '#title': Note\nassignment:\n  '#type': managed_file\n  '#title': Assignment\n  '#required': true"
+elements: "note:\n  '#type': textarea\n  '#title': Note\nassignment:\n  '#type': managed_file\n  '#title': Assignment\n  '#multiple': true\n  '#required': true"
 css: ''
 javascript: ''
 settings:
@@ -147,12 +147,15 @@ settings:
 access:
   create:
     roles:
-      - anonymous
-      - authenticated
+      - administrator
+      - student
     users: {  }
     permissions: {  }
   view_any:
-    roles: {  }
+    roles:
+      - administrator
+      - student
+      - principal
     users: {  }
     permissions: {  }
   update_any:
@@ -168,11 +171,13 @@ access:
     users: {  }
     permissions: {  }
   view_own:
-    roles: {  }
+    roles:
+      - student
     users: {  }
     permissions: {  }
   update_own:
-    roles: {  }
+    roles:
+      - student
     users: {  }
     permissions: {  }
   delete_own:

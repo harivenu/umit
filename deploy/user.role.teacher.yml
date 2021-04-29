@@ -12,4 +12,5 @@ permissions:
   - 'delete own assignment content'
   - 'edit own assignment content'
   - 'view all login histories'
+  - 'view field_assignment_submission'
   - 'view own login history'
