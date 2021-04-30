@@ -14,3 +14,4 @@ permissions:
   - 'view all login histories'
   - 'view field_assignment_submission'
   - 'view own login history'
+  - 'view webform submissions any node'

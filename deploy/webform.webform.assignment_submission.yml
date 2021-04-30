@@ -25,7 +25,7 @@ settings:
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''
@@ -94,10 +94,10 @@ settings:
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
-  wizard_toggle: false
+  wizard_toggle: true
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
-  preview: 0
+  preview: 2
   preview_label: ''
   preview_title: ''
   preview_message: ''
@@ -130,7 +130,7 @@ settings:
   limit_user: null
   limit_user_interval: null
   limit_user_message: ''
-  limit_user_unique: false
+  limit_user_unique: true
   entity_limit_total: null
   entity_limit_total_interval: null
   entity_limit_user: null
@@ -154,7 +154,7 @@ access:
   view_any:
     roles:
       - administrator
-      - student
+      - teacher
       - principal
     users: {  }
     permissions: {  }
@@ -181,7 +181,8 @@ access:
     users: {  }
     permissions: {  }
   delete_own:
-    roles: {  }
+    roles:
+      - student
     users: {  }
     permissions: {  }
   administer:

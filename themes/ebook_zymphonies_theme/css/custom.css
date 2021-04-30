@@ -28,3 +28,7 @@
 .block-views-blockassignment-list-block-1 {
     margin-top: 80px;
 }
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content {
+    z-index: 999;
+}
