@@ -13,7 +13,7 @@ dependencies:
 id: menuteacher
 theme: ebook_zymphonies_theme
 region: content
-weight: -7
+weight: -9
 provider: null
 plugin: 'block_content:77173b3d-a669-4e6a-8755-34c9d3938192'
 settings:

@@ -1,28 +1,29 @@
-uuid: 6a2c13bc-2ebd-47cd-aae2-1151fff51aae
+uuid: bb85f855-bb70-4f97-9537-3cc29406d70c
 langcode: en
 status: true
 dependencies:
-  config:
-    - views.view.people
+  content:
+    - 'block_content:basic:5e064213-be1a-4c5b-9cbe-b3ccbb624dde'
   module:
+    - block_content
     - system
     - user
-    - views
   theme:
     - ebook_zymphonies_theme
-id: views_block__people_block_1
+id: menuprincipal
 theme: ebook_zymphonies_theme
 region: content
-weight: -3
+weight: -8
 provider: null
-plugin: 'views_block:people-block_1'
+plugin: 'block_content:5e064213-be1a-4c5b-9cbe-b3ccbb624dde'
 settings:
-  id: 'views_block:people-block_1'
-  label: ''
-  provider: views
+  id: 'block_content:5e064213-be1a-4c5b-9cbe-b3ccbb624dde'
+  label: 'Menu (Principal)'
+  provider: block_content
   label_display: '0'
-  views_label: ''
-  items_per_page: none
+  status: true
+  info: ''
+  view_mode: full
 visibility:
   request_path:
     id: request_path

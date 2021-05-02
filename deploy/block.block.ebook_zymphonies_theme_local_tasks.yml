@@ -9,7 +9,7 @@ _core:
 id: ebook_zymphonies_theme_local_tasks
 theme: ebook_zymphonies_theme
 region: content
-weight: -5
+weight: -6
 provider: null
 plugin: local_tasks_block
 settings:
