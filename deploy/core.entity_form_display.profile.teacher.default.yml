@@ -1,0 +1,29 @@
+uuid: 15f16570-ef48-4f73-94a1-c5e9040eaee1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.teacher.field_department
+    - field.field.profile.teacher.field_full_name
+    - profile.type.teacher
+id: profile.teacher.default
+targetEntityType: profile
+bundle: teacher
+mode: default
+content:
+  field_department:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_full_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  is_default: true

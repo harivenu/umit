@@ -1,0 +1,38 @@
+uuid: 9f804c7f-4e88-4dc5-8042-66557b9791ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.student.field_department
+    - field.field.profile.student.field_full_name
+    - field.field.profile.student.field_roll_number
+    - profile.type.student
+id: profile.student.default
+targetEntityType: profile
+bundle: student
+mode: default
+content:
+  field_department:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_full_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_roll_number:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  is_default: true

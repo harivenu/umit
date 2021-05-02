@@ -1,0 +1,21 @@
+uuid: 2020f71f-ce39-4d38-9fe3-4054440d12d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_department
+    - profile.type.student
+  module:
+    - options
+id: profile.student.field_department
+field_name: field_department
+entity_type: profile
+bundle: student
+label: Department
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

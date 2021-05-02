@@ -1,0 +1,13 @@
+uuid: 685f9422-bba0-4cb1-9c24-c7f1bedb8323
+langcode: en
+status: true
+dependencies: {  }
+id: teacher
+label: Teacher
+display_label: ''
+multiple: false
+registration: false
+roles:
+  teacher: teacher
+allow_revisions: false
+new_revision: false

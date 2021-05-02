@@ -7,6 +7,7 @@ label: Principal
 weight: 5
 is_admin: null
 permissions:
+  - 'administer users'
   - 'create assignment content'
   - 'delete any assignment content'
   - 'delete assignment revisions'

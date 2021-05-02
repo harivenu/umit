@@ -17,6 +17,7 @@ module:
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  entity: 0
   entity_print: 0
   entity_print_views: 0
   field: 0
@@ -38,6 +39,7 @@ module:
   page_manager_ui: 0
   path: 0
   path_alias: 0
+  profile: 0
   quickedit: 0
   rdf: 0
   role_login_page: 0
