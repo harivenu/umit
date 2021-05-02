@@ -1,0 +1,18 @@
+uuid: 55266908-6baa-4eeb-acf2-611c7505e666
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'PDF Documents'
+type: pdf_documents
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

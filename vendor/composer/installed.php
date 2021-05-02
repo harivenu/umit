@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '22ab0fdeebb70e688af3539d5850420e6e016f62',
+    'reference' => '8606f7ef28399d9ff5019cc929a9155b0c930c7c',
     'name' => 'drupal/legacy-project',
   ),
   'versions' => 
@@ -528,6 +528,15 @@
         0 => '8.9.13',
       ),
     ),
+    'drupal/entity' => 
+    array (
+      'pretty_version' => '1.2.0',
+      'version' => '1.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.2',
+    ),
     'drupal/entity_print' => 
     array (
       'pretty_version' => '2.2.0',
@@ -663,7 +672,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '22ab0fdeebb70e688af3539d5850420e6e016f62',
+      'reference' => '8606f7ef28399d9ff5019cc929a9155b0c930c7c',
     ),
     'drupal/link' => 
     array (
@@ -724,6 +733,15 @@
       array (
         0 => '8.9.13',
       ),
+    ),
+    'drupal/menus_attribute' => 
+    array (
+      'pretty_version' => '1.1.0',
+      'version' => '1.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.1',
     ),
     'drupal/migrate' => 
     array (
@@ -803,6 +821,15 @@
       array (
         0 => '8.9.13',
       ),
+    ),
+    'drupal/profile' => 
+    array (
+      'pretty_version' => '1.2.0',
+      'version' => '1.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.2',
     ),
     'drupal/quickedit' => 
     array (
@@ -1047,6 +1074,15 @@
         0 => '8.9.13',
       ),
     ),
+    'drupal/x_frame_options' => 
+    array (
+      'pretty_version' => '1.2.0',
+      'version' => '1.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.2',
+    ),
     'easyrdf/easyrdf' => 
     array (
       'pretty_version' => '0.9.1',
@@ -1181,6 +1217,15 @@
       array (
       ),
       'reference' => '17ee71341591415d942774eda2c98d8ba7ea9e90',
+    ),
+    'org_heigl/ghostscript' => 
+    array (
+      'pretty_version' => '2.3.2',
+      'version' => '2.3.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'fd73693a3f213427b585b45fa744c9cc60679f25',
     ),
     'paragonie/random_compat' => 
     array (
@@ -1340,6 +1385,15 @@
       array (
         0 => '*',
       ),
+    ),
+    'spatie/pdf-to-image' => 
+    array (
+      'pretty_version' => 'v2.x-dev',
+      'version' => '2.9999999.9999999.9999999-dev',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '6718a89065c34dfadfbb2ca61eb1c3e6a956e503',
     ),
     'stack/builder' => 
     array (

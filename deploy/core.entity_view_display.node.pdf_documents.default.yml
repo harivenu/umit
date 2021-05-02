@@ -1,0 +1,43 @@
+uuid: 887ada7e-c955-40dd-b977-a916e1b6a552
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pdf_documents.field_pdf
+    - field.field.node.pdf_documents.field_pdf_docs
+    - node.type.pdf_documents
+  module:
+    - file
+    - image
+    - user
+id: node.pdf_documents.default
+targetEntityType: node
+bundle: pdf_documents
+mode: default
+content:
+  field_pdf:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_pdf_docs:
+    weight: 102
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

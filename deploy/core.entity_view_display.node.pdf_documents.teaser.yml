@@ -1,0 +1,27 @@
+uuid: c50909bd-cd13-46d0-baa3-0fb1c326e262
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pdf_documents.field_pdf
+    - field.field.node.pdf_documents.field_pdf_docs
+    - node.type.pdf_documents
+  module:
+    - user
+id: node.pdf_documents.teaser
+targetEntityType: node
+bundle: pdf_documents
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_pdf: true
+  field_pdf_docs: true
