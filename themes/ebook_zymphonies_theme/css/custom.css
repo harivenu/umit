@@ -32,3 +32,11 @@
 .ui-dialog.ui-corner-all.ui-widget.ui-widget-content {
     z-index: 999;
 }
+
+.page-node-type-home-page .main-content {
+    background: url(https://localhost/themes/ebook_zymphonies_theme/images/homepage-bg.jpeg);
+}
+
+.page-node-type-page .main-content {
+    background: url(https://localhost/themes/ebook_zymphonies_theme/images/homepage-bg.jpeg);
+}

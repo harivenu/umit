@@ -1,0 +1,35 @@
+uuid: 3db50560-5c8a-48d9-864e-da46f83c37da
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.pdf
+    - field.field.node.pdf_documents.field_pdf
+    - field.field.node.pdf_documents.field_pdf_docs
+    - node.type.pdf_documents
+  module:
+    - file
+    - user
+id: node.pdf_documents.pdf
+targetEntityType: node
+bundle: pdf_documents
+mode: pdf
+content:
+  field_pdf_docs:
+    weight: 102
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_pdf: true
