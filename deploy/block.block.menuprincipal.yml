@@ -1,0 +1,39 @@
+uuid: be6fb57c-cbab-4108-883c-9c9bfb238fc1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5e064213-be1a-4c5b-9cbe-b3ccbb624dde'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - ebook_zymphonies_theme
+id: menuprincipal
+theme: ebook_zymphonies_theme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:5e064213-be1a-4c5b-9cbe-b3ccbb624dde'
+settings:
+  id: 'block_content:5e064213-be1a-4c5b-9cbe-b3ccbb624dde'
+  label: 'Menu (Principal)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /dashboard
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      principal: principal
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

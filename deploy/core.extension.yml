@@ -42,6 +42,7 @@ module:
   profile: 0
   quickedit: 0
   rdf: 0
+  recreate_block_content: 0
   role_login_page: 0
   search: 0
   shortcut: 0

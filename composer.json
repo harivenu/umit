@@ -28,6 +28,7 @@
         "drupal/menus_attribute": "^1.1",
         "drupal/page_manager": "^4.0@beta",
         "drupal/profile": "^1.2",
+        "drupal/recreate_block_content": "^2.1",
         "drupal/role_login_page": "^1.1",
         "drupal/simplelogin": "^6.0",
         "drupal/smtp": "^1.0",
