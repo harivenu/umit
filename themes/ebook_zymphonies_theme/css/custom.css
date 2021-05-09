@@ -48,3 +48,7 @@
 .path-dashboard .main-content {
     background: url(https://localhost/themes/ebook_zymphonies_theme/images/admin-background-image.jpg);
 }
+
+.page-node-type-assignment .main-content {
+    background: url(https://localhost/themes/ebook_zymphonies_theme/images/assignment-background-image.jpg);
+}
