@@ -44,4 +44,7 @@
 .user-login-page .main-content {
     background: url(https://localhost/themes/ebook_zymphonies_theme/images/student-login-page-background-image.jpg);
 }
+
+.path-dashboard .main-content {
+    background: url(https://localhost/themes/ebook_zymphonies_theme/images/admin-background-image.jpg);
 }
