@@ -45,10 +45,23 @@
     background: url(https://localhost/themes/ebook_zymphonies_theme/images/student-login-page-background-image.jpg);
 }
 
+.user-login-page-teacher .main-content {
+    background: url(https://localhost/themes/ebook_zymphonies_theme/images/teacher-background-image.jpg);
+}
+
+.user-login-page-student .main-content {
+    background: url(https://localhost/themes/ebook_zymphonies_theme/images/student-login-page-background-image.jpg);
+}
+
 .path-dashboard .main-content {
     background: url(https://localhost/themes/ebook_zymphonies_theme/images/admin-background-image.jpg);
 }
 
 .page-node-type-assignment .main-content {
     background: url(https://localhost/themes/ebook_zymphonies_theme/images/assignment-background-image.jpg);
+}
+
+.path-user .-role-login-page-form {
+    background-color: white;
+    padding: 20px;
 }
