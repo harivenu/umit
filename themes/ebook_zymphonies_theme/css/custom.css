@@ -40,3 +40,8 @@
 .page-node-type-page .main-content {
     background: url(https://localhost/themes/ebook_zymphonies_theme/images/homepage-bg.jpeg);
 }
+
+.user-login-page .main-content {
+    background: url(https://localhost/themes/ebook_zymphonies_theme/images/student-login-page-background-image.jpg);
+}
+}

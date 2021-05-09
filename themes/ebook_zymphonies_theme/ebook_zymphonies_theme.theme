@@ -368,3 +368,10 @@ function _theme_name__access_content_type(){
   }
   return NULL;
 }
+
+function ebook_zymphonies_theme_preprocess_html(&$variables) {
+  $path = \Drupal::service('path.current')->getPath();
+  if ($path == '/user/student' || $path == '/user/principal' || $path == '/user/teacher') {
+    $variables['attributes']['class'][] = 'user-login-page'; 
+  }
+}
