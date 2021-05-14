@@ -1,8 +1,9 @@
-uuid: 856f9119-1983-4f56-bc7f-ea9369b700cb
+uuid: 80956826-cfdd-438a-961a-569146724c1a
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_form_mode.user.register
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -11,51 +12,43 @@ dependencies:
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
-id: user.user.default
+id: user.user.register
 targetEntityType: user
 bundle: user
-mode: default
+mode: register
 content:
   account:
-    weight: 0
+    weight: -10
     region: content
-    settings: {  }
-    third_party_settings: {  }
   contact:
-    weight: 3
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  language:
-    weight: 2
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  student_profiles:
-    type: profile_form
     weight: 5
     region: content
+  language:
+    weight: 0
+    region: content
+  student_profiles:
+    type: profile_form
+    weight: 90
     settings:
       form_mode: default
     third_party_settings: {  }
+    region: content
   teacher_profiles:
     type: profile_form
-    weight: 6
-    region: content
+    weight: 90
     settings:
       form_mode: default
     third_party_settings: {  }
-  timezone:
-    weight: 4
     region: content
-    settings: {  }
-    third_party_settings: {  }
+  timezone:
+    weight: 6
+    region: content
   user_picture:
     type: image_image
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: 1
+    weight: -1
     region: content
 hidden: {  }

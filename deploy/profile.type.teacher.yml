@@ -6,7 +6,7 @@ id: teacher
 label: Teacher
 display_label: ''
 multiple: false
-registration: false
+registration: true
 roles:
   teacher: teacher
 allow_revisions: false

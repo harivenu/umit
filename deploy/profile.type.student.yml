@@ -6,7 +6,7 @@ id: student
 label: Student
 display_label: ''
 multiple: false
-registration: false
+registration: true
 roles:
   student: student
 allow_revisions: false
