@@ -8,10 +8,18 @@ weight: 4
 is_admin: null
 permissions:
   - 'create assignment content'
+  - 'create marks content'
+  - 'delete any marks content'
   - 'delete assignment revisions'
+  - 'delete marks revisions'
   - 'delete own assignment content'
+  - 'delete own marks content'
+  - 'edit any marks content'
   - 'edit own assignment content'
+  - 'edit own marks content'
+  - 'revert marks revisions'
   - 'view all login histories'
   - 'view field_assignment_submission'
+  - 'view marks revisions'
   - 'view own login history'
   - 'view webform submissions any node'

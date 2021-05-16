@@ -1,0 +1,41 @@
+uuid: d0075d9e-c3be-4811-bca8-a0a60e8ee62c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.marks.body
+    - field.field.node.marks.field_marskheet
+    - node.type.marks
+  module:
+    - file
+    - text
+    - user
+id: node.marks.default
+targetEntityType: node
+bundle: marks
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_marskheet:
+    weight: 102
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

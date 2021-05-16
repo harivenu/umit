@@ -148,20 +148,23 @@ settings:
 access:
   create:
     roles:
-      - anonymous
       - authenticated
     users: {  }
     permissions: {  }
   view_any:
-    roles: {  }
+    roles:
+      - anonymous
+      - authenticated
     users: {  }
     permissions: {  }
   update_any:
-    roles: {  }
+    roles:
+      - administrator
     users: {  }
     permissions: {  }
   delete_any:
-    roles: {  }
+    roles:
+      - administrator
     users: {  }
     permissions: {  }
   purge_any:
@@ -169,15 +172,18 @@ access:
     users: {  }
     permissions: {  }
   view_own:
-    roles: {  }
+    roles:
+      - authenticated
     users: {  }
     permissions: {  }
   update_own:
-    roles: {  }
+    roles:
+      - authenticated
     users: {  }
     permissions: {  }
   delete_own:
-    roles: {  }
+    roles:
+      - authenticated
     users: {  }
     permissions: {  }
   administer:
@@ -215,13 +221,7 @@ handlers:
       from_name: _default
       subject: ' PROJECT from [webform_submission:values:name]'
       body: "Thanks For Registering\r\n<p>Submitted on [webform_submission:created]</p>\r\n<p>Submitted by: [webform_submission:user]</p>\r\n<p>Submitted values are:</p>\r\n[webform_submission:values]"
-      excluded_elements:
-        name: name
-        email: email
-        name_of_paper: name_of_paper
-        name_of_conference: name_of_conference
-        name_of_conference_city: name_of_conference_city
-        year_option: year_option
+      excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false

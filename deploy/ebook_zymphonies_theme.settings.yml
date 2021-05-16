@@ -15,7 +15,7 @@ rss_url: rss.xml
 show_social_icon: 1
 show_credit_link: 1
 show_slideshow: 1
-no_of_slides: '2'
+no_of_slides: '3'
 slide_title_1: 'UMIT- EMPOWERING THE WOMEN'
 slide_description_1: ''
 slide_url_1: '#'
@@ -27,13 +27,16 @@ slide_image_path_2: /images/slider/slide_02.jpg
 _core:
   default_config_hash: TCnsvjszngwaTxzCilUk5_D2oxTo2EyAXpgC8yaDmZs
 logo:
-  use_default: 1
+  use_default: 0
+  path: 'public://umit logo.jpeg'
 favicon:
   use_default: 1
 slide_image_path1:
   - '39'
-slide_image_path2: {  }
-slide_image_path3: {  }
+slide_image_path2:
+  - '55'
+slide_image_path3:
+  - '56'
 slide_title_3: ''
 slide_description_3: ''
 slide_url_3: ''

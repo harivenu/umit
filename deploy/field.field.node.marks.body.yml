@@ -1,0 +1,23 @@
+uuid: f15685b9-6fd3-4b63-9df8-6de32fa7f448
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.marks
+  module:
+    - text
+id: node.marks.body
+field_name: body
+entity_type: node
+bundle: marks
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
