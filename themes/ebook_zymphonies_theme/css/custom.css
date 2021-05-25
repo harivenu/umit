@@ -65,3 +65,7 @@
     background-color: white;
     padding: 20px;
 }
+
+.field--name-field-assignment-submission details {
+    display: none;
+}

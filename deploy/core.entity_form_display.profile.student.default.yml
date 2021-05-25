@@ -6,6 +6,7 @@ dependencies:
     - field.field.profile.student.field_department
     - field.field.profile.student.field_full_name
     - field.field.profile.student.field_roll_number
+    - field.field.profile.student.field_year
     - profile.type.student
 id: profile.student.default
 targetEntityType: profile
@@ -33,6 +34,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_year:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
 hidden:
   is_default: true

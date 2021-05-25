@@ -1,0 +1,29 @@
+uuid: 60972f23-3ddd-4a1e-8a29-0e93b2831e21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_year
+    - profile.type.student
+    - taxonomy.vocabulary.years
+id: profile.student.field_year
+field_name: field_year
+entity_type: profile
+bundle: student
+label: Year
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      years: years
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

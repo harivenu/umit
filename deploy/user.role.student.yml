@@ -7,5 +7,7 @@ label: Student
 weight: 3
 is_admin: null
 permissions:
+  - 'create student profile'
   - 'edit own field_assignment_submission'
+  - 'update own student profile'
   - 'view own field_assignment_submission'

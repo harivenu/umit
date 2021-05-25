@@ -1,0 +1,21 @@
+uuid: ed990069-61d8-4152-81ef-e40e9e154af8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_department
+    - node.type.assignment
+  module:
+    - options
+id: node.assignment.field_department
+field_name: field_department
+entity_type: node
+bundle: assignment
+label: Department
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

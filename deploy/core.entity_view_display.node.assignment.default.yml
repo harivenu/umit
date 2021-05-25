@@ -5,8 +5,11 @@ dependencies:
   config:
     - field.field.node.assignment.body
     - field.field.node.assignment.field_assignment_submission
+    - field.field.node.assignment.field_department
+    - field.field.node.assignment.field_year
     - node.type.assignment
   module:
+    - options
     - text
     - user
     - webform
@@ -31,6 +34,21 @@ content:
       attributes: {  }
     third_party_settings: {  }
     type: webform_entity_reference_link
+    region: content
+  field_department:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_year:
+    weight: 103
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   links:
     weight: 100

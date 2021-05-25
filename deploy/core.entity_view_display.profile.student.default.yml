@@ -6,6 +6,7 @@ dependencies:
     - field.field.profile.student.field_department
     - field.field.profile.student.field_full_name
     - field.field.profile.student.field_roll_number
+    - field.field.profile.student.field_year
     - profile.type.student
   module:
     - options
@@ -36,6 +37,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_year:
+    weight: 3
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
 hidden:
   entity_print_view_epub: true
