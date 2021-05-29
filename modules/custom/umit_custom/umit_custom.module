@@ -1,0 +1,60 @@
+<?php
+
+use Drupal\Core\Session\AccountInterface;
+use Drupal\node\NodeInterface;
+use Drupal\Core\Access\AccessResult;
+use Drupal\node\Entity\Node;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\views\ViewExecutable;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Url;
+
+/**
+ * @file
+ * Managing the custom coding.
+ */
+
+/**
+ * Implements hook_views_query_alter.
+ */
+function umit_custom_views_query_alter($view, $query) {
+  if($view->id() == 'assignment_list' && $view->current_display == 'block_2') {
+    $user = \Drupal::currentUser();
+    if (in_array('student', $user->getRoles())) {
+      $list = \Drupal::entityTypeManager()
+        ->getStorage('profile')
+        ->loadByProperties([
+          'uid' => $user->id(),
+          'type' => 'student',
+      ]);
+      $profile = current($list);
+      $department = $profile->get('field_department')->getValue();
+      $department = current($department);
+      $year = $profile->get('field_year')->getValue();
+      $year = current($year);
+      foreach ($query->where as &$condition_group) {
+        foreach ($condition_group['conditions'] as &$condition) {
+          if (isset($condition['field']) && $condition['field'] == 'node__field_department.field_department_value = :node__field_department_field_department_value') {
+            $condition['value'][':node__field_department_field_department_value'] = $department['value'];
+          }
+          if (isset($condition['field']) && $condition['field'] == 'node__field_year.field_year_target_id = :node__field_year_field_year_target_id') {
+            $condition['value'][':node__field_year_field_year_target_id'] =  $year['target_id'];
+          }
+        }
+      }
+    }
+  }
+
+  if($view->id() == 'assignment_list' && $view->current_display == 'block_1'){
+    $user = \Drupal::currentUser();
+    if (in_array('teacher', $user->getRoles())) {
+      foreach ($query->where as &$condition_group) {
+        foreach ($condition_group['conditions'] as &$condition) { 
+          if (isset($condition['field']) && $condition['field'] == 'node_field_data.uid = :node_field_data_uid') {
+            $condition['value'][':node_field_data_uid'] = $user->id();
+          }
+        }
+      }
+    }
+  }
+}

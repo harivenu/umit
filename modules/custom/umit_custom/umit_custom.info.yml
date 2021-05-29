@@ -1,0 +1,10 @@
+name: UMIT Custom
+type: module
+description: 'This module is for writing custom code.'
+package: UMIT Custom
+
+# Information added by harivenu on 2021-05-28
+version: '8.9.0'
+core: '8.x'
+project: 'umit_custom'
+datestamp: 1521723534

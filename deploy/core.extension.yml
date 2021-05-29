@@ -27,6 +27,7 @@ module:
   help: 0
   history: 0
   image: 0
+  kint: 0
   link: 0
   login_history: 0
   menu_item_role_access: 0
@@ -55,6 +56,7 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  umit_custom: 0
   update: 0
   user: 0
   views_ui: 0
