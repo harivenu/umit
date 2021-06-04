@@ -50,7 +50,8 @@ function umit_custom_views_query_alter($view, $query) {
     if (in_array('teacher', $user->getRoles())) {
       foreach ($query->where as &$condition_group) {
         foreach ($condition_group['conditions'] as &$condition) { 
-          if (isset($condition['field']) && $condition['field'] == 'node_field_data.uid = :node_field_data_uid') {
+          if (isset($condition['field']) && $condition['field'] == 'node_field_data.uid') {
+            unset($condition['value']);
             $condition['value'][':node_field_data_uid'] = $user->id();
           }
         }

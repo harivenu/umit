@@ -721,6 +721,7 @@ display:
         fields: false
         filters: false
         filter_groups: false
+        arguments: false
       filters:
         status:
           value: '1'
@@ -793,14 +794,13 @@ display:
         operator: AND
         groups:
           1: AND
+      arguments: {  }
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
