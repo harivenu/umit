@@ -69,3 +69,7 @@
 .field--name-field-assignment-submission details {
     display: none;
 }
+
+#block-ebook-zymphonies-theme-branding img {
+    height: 100px;
+}
