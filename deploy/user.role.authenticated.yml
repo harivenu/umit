@@ -14,6 +14,7 @@ permissions:
   - 'access kint'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'entity print access bundle project_form'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'

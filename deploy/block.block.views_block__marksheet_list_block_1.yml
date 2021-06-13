@@ -1,0 +1,38 @@
+uuid: 8a65dcd0-c20e-4e0d-b51e-9c296cc67bb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.marksheet_list
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - ebook_zymphonies_theme
+id: views_block__marksheet_list_block_1
+theme: ebook_zymphonies_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:marksheet_list-block_1'
+settings:
+  id: 'views_block:marksheet_list-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /dashboard
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      student: student
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
