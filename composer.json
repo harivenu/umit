@@ -25,6 +25,7 @@
         "drupal/devel": "^2.1",
         "drupal/entity_print": "2.x",
         "drupal/login_history": "^1.0",
+        "drupal/login_redirect_per_role": "^1.7",
         "drupal/menu_item_role_access": "^2.0",
         "drupal/menus_attribute": "^1.1",
         "drupal/page_manager": "^4.0@beta",
